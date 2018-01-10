@@ -1,15 +1,21 @@
 FROM rocker/tidyverse:latest
 MAINTAINER "Samantha Riccadonna" <samantha.riccadonna@fmach.it>
 
-# Installing dev version of packages needed for netcdf R package
+# Installing packages needed for following R packages
+#    libnetcdf-dev \    #needed for netCFD package needed for mzR
+#    mesa-common-dev \  #needed for xcms
+#    libglu1-mesa-dev \ #needed for xcms
+#    libudunits2-dev \  #needed for plotly (udunits2)
+#    libxt-dev \        #needed for plotly (sf)
+#    libgdal-dev        #needed for plotly (sf)
 RUN apt-get update -qq\
   && apt-get install -y --no-install-recommends \
-    libnetcdf-dev \    #needed for netCFD package needed for mzR
-    mesa-common-dev \  #needed for xcms
-    libglu1-mesa-dev \ #needed for xcms
-    libudunits2-dev \  #needed for plotly (udunits2)
-    libxt-dev \        #needed for plotly (sf)
-    libgdal-dev        #needed for plotly (sf)
+    libnetcdf-dev \    
+    mesa-common-dev \  
+    libglu1-mesa-dev \ 
+    libudunits2-dev \  
+    libxt-dev \        
+    libgdal-dev        
   
 # Installing required packages
 RUN install2.r --error \
