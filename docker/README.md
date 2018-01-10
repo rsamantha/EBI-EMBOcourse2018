@@ -1,6 +1,6 @@
 # EBI-EMBO course 2018 by Pietro Franceschi and Samantha Riccadonna
 
-# Credits: Thanks to Davide Albanese and its compmetagen dockers 
+### Credits: Thanks to Davide Albanese and its compmetagen dockers 
 
 Extends the docker image [rocker/rstudio](https://hub.docker.com/r/rocker/hadleyverse/), providing the packages and data needed for our lesson for the EBI-EMBO metabolomics course 2018 .
 
