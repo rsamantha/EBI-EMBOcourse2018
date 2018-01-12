@@ -33,7 +33,6 @@ RUN install2.r --error \
     shiny \
 # Installing packages for data handling and visualization
     FactoMineR \
-    factoextra \ 
     RColorBrewer 
 
 #Installing EBI-EMBO course related packages
