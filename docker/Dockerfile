@@ -37,6 +37,7 @@ RUN install2.r --error \
 
 #Installing EBI-EMBO course related packages
 RUN installGithub.r pietrofranceschi/LCMSdemo  
+RUN installGithub.r rsamantha/LCMSexplore  
 
 # Clean
 RUN apt-get clean \
